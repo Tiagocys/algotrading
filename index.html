@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaFx</title>
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Algo Trading NovaFx" />
+    <meta property="og:url" content="https://novafx.com.br/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Tiagocys/NovaFx/main/og.png" />
+    <meta property="og:description" 
+  content="O Algo Trading da NovaFx te dá horário de trading personalizado e gerencia o risco da sua conta por você. Baixe agora e teste o tempo que for preciso." />
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+          <nav>
+            <img src="img/logofbs.png" alt="">
+          </nav>
+          <div class="main">
+            <div class="main-txt">
+              <h1>
+                Algo Trading para Metatrader 4
+              </h1>
+              <p>
+                O Algo Trading da NovaFx te dá horário de trading personalizado e gerencia o risco da sua conta por você. Baixe agora e teste o tempo que for preciso.
+              </p>
+              <a href="demo/Algo Trading Demo + Manual.rar" download><button>Baixar demo</button></a>
+            </div>
+            <div class="main-form">
+            <p>Já tem uma conta parceiro FBS? Peça sua licença gratuita!</p>
+            <form id="parceiro" action="https://api.web3forms.com/submit" method="POST">
+
+              <input type="hidden" name="subject" value="Cadastro de licença gratuita">
+              <input type="hidden" name="from_name" value="NovaFx">
+              <input type="hidden" name="access_key" value="9d9d4480-e4dd-4be6-a774-e8f715058f6d">
+              <label for="name">Primeiro nome</label>
+              <input id="name" minlength="2" placeholder="Insira seu nome" type="text" name="name" required>
+              <label for="sobrenome">Último nome</label>
+              <input id="sobrenome" minlength="2" placeholder="Insira seu sobrenome" type="text" name="sobrenome" required>
+              <label for="email">Seu email</label>
+              <input type="email" placeholder="Insira seu email" id="email" name="email" required>
+              <label for="conta">Sua conta parceiro</label>
+              <input type="text" required name="conta" id="conta" placeholder="Insira o número da conta" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+              <input type="hidden" name="redirect" value="https://novafx.com.br/obrigado.html">
+              
+              <button type="submit">Enviar</button>
+            </form>
+            <p>Ainda não tem uma conta parceiro FBS?</p>
+            <a href="https://fbs.partners?ibl=47822&ibp=7209644"><button>Abra uma conta</button></a>
+            
+            </div>
+          </div>
+
+
+        </div>
+        <footer id="footer">
+            <p>NovaFx 2024</p>
+            <a href="https://www.facebook.com/algotradingnovafx/"><img src="img/facebook.png" alt=""></a>
+        </footer>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
